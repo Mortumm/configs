@@ -1,0 +1,45 @@
+[user]
+	name = userNameHere
+	email = user@email.here
+[color]
+	ui = auto
+[column]
+    ui = auto
+[branch]
+    sort = -committerdate
+[diff]
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
+[push]
+    default = simple
+    autoSetupRemote = true
+    followTags = true
+[fetch]
+    prune = true
+    pruneTags = true
+    all = true
+[merge]
+    conflictstyle = zdiff3
+[help]
+    autocorrect = prompt
+[commit]
+    verbose = true
+    template = /Users/usernamehere/.stCommitMsg
+[tag]
+    sort = -committerdate
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[core]
+	excludesfile = /Users/usernamehere/.gitignore_global
+	excludesfile = ~/.gitignore
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
