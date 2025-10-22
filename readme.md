@@ -1,3 +1,3 @@
-### Git Personal Defaults
+### Personal Defaults
 
-Just something which I want to keep along between different work environments.
+Configs I want to keep along between different development environments.
